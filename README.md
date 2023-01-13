@@ -13,31 +13,40 @@ Ready-to-use loading animations in ASCII and UTF-8 for easy integration into you
 
 Instead, use one of the following methods to retrieve the script:
 ```bash
-git clone https://github.com/Basam1881/bash_loading_animations
+git clone git clone https://github.com/Basam1881/cmd_loader
 ```
 ```bash
-curl -O https://raw.githubusercontent.com/Basam1881/bash_loading_animations/main/scripts/bash_loading_animations.sh
-curl -O https://raw.githubusercontent.com/Basam1881/bash_loading_animations/main/scripts/bash_loading_animations.demo
-curl -O https://raw.githubusercontent.com/Basam1881/bash_loading_animations/main/loading.sh
+curl -O https://raw.githubusercontent.com/Basam1881/cmd_loader/main/scripts/loading.sh
+curl -O https://raw.githubusercontent.com/Basam1881/cmd_loader/main/loading
 ```
 ```bash
-wget https://raw.githubusercontent.com/Basam1881/bash_loading_animations/main/scripts/bash_loading_animations.sh
-wget https://raw.githubusercontent.com/Basam1881/bash_loading_animations/main/scripts/bash_loading_animations.demo
-wget https://raw.githubusercontent.com/Basam1881/bash_loading_animations/main/loading.sh
+wget https://raw.githubusercontent.com/Basam1881/cmd_loader/main/scripts/loading.sh
+wget https://raw.githubusercontent.com/Basam1881/cmd_loader/main/loading
 ```
 
 
 ## Usage
 
-./loading [MESSAGE] [LOAD_ANIMATION_NAME] [command]
 
 ```bash
+# Give permission to execute the file
 chmod +x loading
+```
+```bash
+./loading [MESSAGE] [LOAD_ANIMATION_NAME] [TIME_INTERVAL] <command>
+```
+```bash
+# The order of flags DOES matter
 ./loading sleep 5
-./loading -m downloading sleep 5
-./loading -a metro sleep 5
-./loading -m downloading -a metro sleep 5
-./loading -a metro -m downloading sleep 5 # WRONG
+./loading -m Downloading sleep 5
+./loading -a moon sleep 5
+./loading -t 0.1 sleep 5
+./loading -m Downloading -a moon sleep 5
+./loading -m Downloading -a moon -t 0.1 sleep 5
+
+./loading -a moon -m Downloading sleep 5 # WRONG
+./loading -t 0.1 -a moon -m Downloading sleep 5 # WRONG
+
 ```
 <div align="left">
 
