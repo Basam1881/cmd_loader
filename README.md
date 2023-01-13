@@ -13,7 +13,7 @@ Ready-to-use loading animations in ASCII and UTF-8 for easy integration into you
 
 Instead, use one of the following methods to retrieve the script:
 ```bash
-git clone git clone https://github.com/Basam1881/cmd_loader
+git clone https://github.com/Basam1881/cmd_loader
 ```
 ```bash
 curl -O https://raw.githubusercontent.com/Basam1881/cmd_loader/main/scripts/loading.sh
