@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# load animatino names
-source animations.sh
 
 # define default values
 MESSAGE=""
@@ -121,7 +119,7 @@ BLA::play_loading_animation_loop() {
 }
 
 BLA::stop_loading_animation() {
-  kill "${BLA_loading_animation_pid}" &> /dev/null
+  kill "${BLA_loading_animation_pid}" > /dev/null 2>&1
   tput cnorm # Restore the terminal cursor
   printf '\e[A\e[K'
 }
